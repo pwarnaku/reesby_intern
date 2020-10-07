@@ -12,16 +12,3 @@ code {
     monospace;
 }
 
-.top {
-  display: flex;
-  justify-content: space-between;
-
-}
-.search-btns {
-  display: flex;
-
-}
-
-.btns{
-  margin-left: 30px;
-}

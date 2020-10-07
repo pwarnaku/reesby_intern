@@ -18,11 +18,7 @@ const useStyles = makeStyles({
   });
  const classes = useStyles();
 
- /*tested codes
-//var jsonArray = JSON.parse(JSON.stringify(data));
-//const columns = data[0] && Object.keys(data[0]);
-//console.log(tmpArray);
-*/
+
   return (
       <TableContainer component={Paper} style={{border: "1px solid rgb(0, 0, 0)"}}>
       <Table className={classes.table} aria-label="simple table">
@@ -36,7 +32,7 @@ const useStyles = makeStyles({
             <TableCell>Industry</TableCell>
             <TableCell>Point of Contract</TableCell>
             <TableCell>Website</TableCell>
-       </TableRow>
+        </TableRow>
         </TableHead>
         <TableBody>
 
