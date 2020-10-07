@@ -17,9 +17,8 @@ const useStyles = makeStyles((theme) => ({
   
   button: {
   height: 40,
-  padding: theme.spacing(2),
+  padding: theme.spacing(1),
   textAlign: 'center',
-   //width: 150,
   },
   control: {
     padding: theme.spacing(2),
@@ -52,19 +51,20 @@ function App() {
 
 
     <div className={classes.root}>
+
       <Grid container spacing={1}>
 
-         <Grid item xs={9} sm={10}>
-           <h2>Clients</h2>
-         </Grid>
+        <Grid item xs={9} sm={10}>
+          <h2>Clients</h2>
+        </Grid>
      
-         <Grid item xs={3} sm={2}>
+        <Grid item xs={3} sm={2}>
            <Button variant="outlined" className={classes.button}>+ NEW CLIENT</Button>
-         </Grid>
+        </Grid>
   
-         <Grid item xs={4} sm={5}>
+        <Grid item xs={4} sm={5}>
            <Search/>
-         </Grid>
+        </Grid>
       
         <Grid item xs={3} sm={2}>
            <Button variant="outlined">Search</Button>
@@ -75,22 +75,15 @@ function App() {
         </Grid>
 
          <Grid item xs={3} sm={2}>
-           <Button variant="outlined" className={classes.button} >SHOW FILTERS</Button>
-         </Grid>
+          <Button variant="outlined" className={classes.button} >SHOW FILTERS</Button>
+        </Grid>
        
-         <Grid item xs={12} sm={12}>
-         <Datatable data ={data}/>
-         </Grid>
+        <Grid item xs={12} sm={12}>
+          <Datatable data ={data}/>
+        </Grid>
        
-     
-     
-    </Grid>
+     </Grid>
   </div>
-
-    
-
-
-    
     
   );
 }
